@@ -1,18 +1,183 @@
-@import "fonts.css";
-
-body {
-  background: #ec008c;
-  color: #fff;
+@import url(fonts.css);
+ body {
+	margin: 0;
+	background-color: #fff;
+	width: 100%;
 }
-
+.navigation {
+	list-style: none;
+	width: 50%;
+	height: 100%;
+	position: fixed;
+	top: 60px;
+	left: 0;
+	z-index: 0;
+	margin: 0;
+	padding: 0;
+	padding-top: 12px;
+}
+.site-wrap {
+	width: 100%;
+	height: 1000px;
+	overflow: hidden;
+	background-color: #fff;
+	position: relative;
+	top: 0;
+	bottom: 100%;
+	left: 0;
+	z-index: 1;
+}
+.nav-trigger {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+label[for="nav-trigger"] {
+	position: fixed;
+	top: 0;
+	z-index: 4;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	background-image: url("../images/toggle-open.svg");
+	-webkit-background-size: cover cover;
+	background-size: cover;
+}
+.nav-trigger:checked + label {
+	left: 90%;
+	background-image: url("../images/toggle-close.svg")
+}
+.nav-trigger:checked ~ .site-wrap {
+	left: 300px;
+}
+.nav-trigger:checked ~ .hugeLogo {
+	left: 24px;
+}
+.nav-trigger:checked ~ .overlay {
+	left: 300px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-trigger + label,
+.site-wrap,
+.hugeLogo {
+	-webkit-transition: left 0.2s;
+	transition: left 0.2s;
+}
+.overlay {
+	-webkit-transition: ease-in 0.2s;
+	transition: ease-in 0.2s;
+}
+body {
+	overflow-x: hidden;
+}
+.topBar {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	background-color: #E9168C;
+}
+.heroImage {
+	background-image: url(../images/background-image.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	top: 60px;
+	left: 0px;
+	width: 100%;
+	height: 240px;
+	display: block;
+}
 h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin: 0;
-  font: 20vmin/1 HUGEAvantGardeBold;
-  letter-spacing: -0.06em;
-  text-align: center;
+	padding: 50px 0px;
+	font: 44px HUGEAvantGardeBold;
+	line-height: 48px;
+	color: #000;
+	margin: 0;
+}
+.content {
+	position: absolute;
+	margin: 0;
+	top: 480px;
+	left: 0px;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+p {
+	font: 14px Galaxie;
+	line-height: 24px;
+	margin: 0;
+}
+li {
+	font: 21px HUGEAvantGardeBold;
+	line-height: 48px;
+	margin: 0;
+}
+ul li a {
+	padding: 12px 24px;
+	width: 100%;
+}
+ul li a:hover {
+	background-color: #eee;
+	color: #E9168C;
+}
+.logo {
+	width: 50px;
+}
+.hugeLogo {
+	position: absolute;
+	left: -74px;
+	z-index: 4;
+	top: 20px;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.overlay {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+.copyright {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	padding: 24px;
+}
+.copyright p {
+	font: 12px Helvetica Neue;
+	line-height: 16px;
+}
+.secondary {
+	display: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.secondary li {
+	padding-left: 0;
+}
+.secondary li a {
+	font: 16px Galaxie;
+	line-height: 48px;
+}
+.selected ul {
+	display: block;
+}
+.selected ul li:hover {
+	background-color: #eee;
+}
+.selected ul li a:hover {
+	color: #E9168C;
+}
+#image {
+	position: absolute;
+	top: 240px;
+	padding: 50px 24px;
 }

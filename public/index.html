@@ -1,10 +1,98 @@
 <!doctype html>
 <html>
+
 <head>
-  <title>HUGE NavExercise</title>
-  <link rel="stylesheet" href="/styles/main.css">
+	<title>HUGE NavExercise</title>
+	<link rel="stylesheet" href="/styles/main.css">
+	<link rel="stylesheet" href="styles/media.css">
 </head>
+
 <body>
-<h1>Hello.</h1>
+	<ul class="navigation">
+		<li><a href="#" class="nav-item">Work</a>
+		</li>
+		<li><a href="#" class="nav-item">About</a>
+		</li>
+		<li class="nav-item"><a href="#" class="nav-item">Careers</a>
+			<ul class="secondary">
+				<li><a href="#">
+						Client Services
+						</a>
+				</li>
+				<li><a href="#">
+						Creative
+						</a>
+				</li>
+				<li><a href="#">
+						Motion & Media
+						</a>
+				</li>
+				<li><a href="#">
+						Operations
+						</a>
+				</li>
+				<li><a href="#">
+						People
+						</a>
+				</li>
+				<li><a href="#">
+						Strategy
+						</a>
+				</li>
+				<li><a href="#">
+						Technology
+						</a>
+				</li>
+				<li><a href="#">
+						UX & Product Design
+						</a>
+				</li>
+			</ul>
+		</li>
+		<li><a href="#" class="nav-item">Ideas</a>
+		</li>
+		<li><a href="#" class="nav-item">News</a>
+		</li>
+		<li><a href="#" class="nav-item">Events</a>
+		</li>
+		<li><a href="#" class="nav-item">Contact</a>
+		</li>
+	</ul>
+	<div class="copyright">
+		<p>&copy; 2014 Huge. All Rights Reserved.</p>
+	</div>
+
+	<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+	<label for="nav-trigger"></label>
+	<div class="topBar"></div>
+	<div class="hugeLogo">
+		<img class="logo" src="images/HUGE-white.png">
+	</div>
+
+	<div class="overlay"></div>
+	<div class="site-wrap">
+
+
+		<div class="heroImage">
+			<h1 id="image">Get paid for giving a s**t.</h1>
+		</div>
+		<!-- insert the rest of your page markup here -->
+		<div class="content">
+			<article>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+				</p>
+			</article>
+		</div>
+	</div>
 </body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+	$(function () {
+		$(".nav-item").click(function () {
+			$(this).toggleClass("selected");
+		});
+	});
+</script>
+
 </html>

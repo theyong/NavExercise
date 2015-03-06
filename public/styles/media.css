@@ -1,0 +1,114 @@
+@media screen and (min-width: 768px) {
+	.topBar {
+		height: 72px;
+	}
+	.nav-trigger,
+	label {
+		display: none;
+	}
+	.hugeLogo {
+		left: 0px;
+		top: 0;
+		padding: 24px;
+		position: fixed;
+	}
+	.heroImage {
+		height: 640px;
+		top: 72px;
+	}
+	.content {
+		top: 780px;
+		padding: 0px 132px;
+	}
+	p {
+		font-size: 24px;
+		line-height: 36px;
+	}
+	h1 {
+		position: absolute;
+		top: 10%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -30%);
+		-ms-transform: translate(-50%, -30%);
+		transform: translate(-50%, -30%);
+		margin: 0;
+		font: 120px HUGEAvantGardeBold;
+		letter-spacing: -0.06em;
+		line-height: 132px;
+		text-align: center;
+		color: #fff;
+	}
+	.navigation {
+		list-style: none;
+		display: inline-table;
+		z-index: 5;
+		width: 100%;
+		top: 0;
+		left: 108px;
+		position: fixed;
+	}
+	.navigation ul {
+		display: none;
+		z-index: 10;
+	}
+	.selected ul {
+		display: block;
+	}
+	ul li {
+		float: left;
+		padding-left: 0;
+		top: 0;
+	}
+	ul li:hover {
+		background-color: rgba(0, 0, 0, 0);
+	}
+	ul li a {
+		color: #fff;
+		padding: 24px 24px;
+		font-size: 21px;
+	}
+	ul li a:hover {
+		background-color: #fff;
+		color: #E9168C;
+	}
+	.selected {
+		background-color: #fff;
+		color: #E9168C;
+	}
+	ul ul {
+		background: #fff;
+		border-radius: 0px;
+		padding: 0;
+		position: absolute;
+		margin-top: 12px;
+	}
+	ul ul li {
+		float: none;
+		position: relative;
+		color: rgba(0, 0, 0, 0.5);
+	}
+	ul ul li:hover {
+		background-color: #eee;
+	}
+	ul ul li a {
+		padding: 0px 24px;
+		font-family: Galaxie;
+		font-size: 16px;
+		color: rgba(0, 0, 0, 0.5);
+		width: 100%;
+	}
+	ul ul li a:hover {
+		color: #E9168C;
+		background-color: #eee;
+	}
+	.overlay {
+		display: none;
+	}
+	.secondary {
+		position: absolute;
+		top: 70px;
+	}
+	.copyright {
+		display: none;
+	}
+}
